@@ -24,5 +24,5 @@ module.exports = function longestConsecutiveLength(array) {
 		lastIt = i
 	}
 	longest = longest < currentLong ? currentLong : longest
-	return longest
+	return longest > 1 ? longest : 0
 }
